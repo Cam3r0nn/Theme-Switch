@@ -1,0 +1,120 @@
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+ 
+* {
+ 	margin: 0;
+ 	padding: 0;
+ 	list-style: none;
+ 	text-decoration: none;
+ 	box-sizing: border-box;
+}
+
+html {
+ 	/* Change theme animation */
+ 	-webkit-transition: background-color 0.5s ease-in-out;
+ 	-moz-transition: background-color 0.5s ease-in-out;
+ 	-o-transition: background-color 0.5s ease-in-out;
+ 	transition: background-color 0.5s ease-in-out;
+}
+
+body {
+ 	min-height: 100%;
+ 	width: 100%;
+ 	position: relative;
+ 	font-family: 'Lato', Arial;
+ 	font-size: 16px;
+}
+
+#wrapper {
+ 	height: 100%;
+ 	width: 100%;
+}
+
+.container {
+ 	height: 80%;
+ 	width: 50%;
+}
+
+.center {
+ 	position: fixed;
+ 	top: 50%;
+ 	left: 50%;
+ 	transform: translate(-50%, -50%);
+}
+
+.text-center {
+ 	text-align: center;
+ 	text-align: -webkit-center;
+ 	text-align: -moz-center;
+}
+
+/* BUTTON */
+
+a.animated-button.victoria-two {
+	border: 2px solid #D24D57;
+}
+a.animated-button.victoria-two:after {
+	background: #D24D57;
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+	transform: translateX(-50%) translateY(-50%) rotate(25deg);
+}
+
+.btn {
+ 	height: 50px;
+ 	width: 250px;
+ 	padding: 12px 48px;
+ 	border: 1px #FFF solid;
+ 	font-size: 14px;
+ 	font-weight: bold;
+}
+
+.btn:hover {
+ 	cursor: pointer;
+}
+
+.light-theme .btn {
+	color: #000;
+	border-color: #000;
+}
+
+.light-theme .btn:hover {
+	color: #FFF;
+	background-color: rgb(32, 32, 32);
+	-webkit-transition: background-color 0.25s linear;
+ 	-moz-transition: background-color 0.25s linear;
+ 	-o-transition: background-color 0.25s linear;
+ 	transition: background-color 0.25s linear;
+}
+
+.dark-theme .btn {
+	color: #FFF;
+	border-color: #FFF;
+}
+
+.dark-theme .btn:hover {
+	color: #000;
+	background-color: #FFF;
+	-webkit-transition: background-color 0.25s linear;
+ 	-moz-transition: background-color 0.25s linear;
+ 	-o-transition: background-color 0.25s linear;
+ 	transition: background-color 0.25s linear;
+}
+
+/* BUTTON END */
+
+p {
+ 	width: 100%;
+ 	margin: 12px 0 28px 0;
+ 	line-height: 1.25rem;
+}
+
+.light-theme {
+	background-color: #FFF;
+	color: #333;
+}
+
+.dark-theme {
+ 	background-color: #1e2022;
+    color: #c9d6df;
+}

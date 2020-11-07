@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html class="light-theme">
+    <head>
+        <title>Theme Switch</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="author" content="Cam3r0n">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="container center text-center">
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p>
+                    Mauris ut nunc vitae metus interdum dapibus. In finibus ipsum eu urna pulvinar laoreet.
+                    Sed id ex cursus, laoreet dui sed, ultricies leo. Nulla euismod feugiat iaculis.
+                    Vestibulum eleifend porta eleifend. Curabitur purus arcu, mollis in sem rhoncus, fermentum tempor lorem.
+                    Aenean feugiat erat maximus mi suscipit, at scelerisque dolor faucibus. Maecenas venenatis nec arcu faucibus scelerisque.
+                    Nullam varius arcu orci, non tincidunt est tempus in. Nullam porta semper purus non tristique.
+                </p>
+                <a id="theme-switch" class="btn">Change Theme</a>
+            </div>
+        </div>
+        <!-- SCRIPTS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
+        <script>
+            $(document).ready(function() {
+                $('#theme-switch').click(function() {
+                    $('html').toggleClass('light-theme');
+                    $('html').toggleClass('dark-theme');
+                });
+            });
+        </script>
+    </body>
+</html>
